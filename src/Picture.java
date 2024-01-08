@@ -18,6 +18,11 @@ public class Picture
         drawn = true;
     }
 
+    public static void main(String[] args) {
+        Picture picture = new Picture();
+        picture.draw();
+    }
+
     /**
      * Draw this picture.
      */
