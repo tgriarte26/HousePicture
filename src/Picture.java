@@ -15,7 +15,7 @@ public class Picture
         window = new Square();
         roof = new Triangle();
         sun = new Circle();
-        drawn = true;
+        drawn = false;
     }
 
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class Picture
      */
     public void draw()
     {
-        if(drawn) {
+        if(!drawn) {
             wall.moveHorizontal(-140);
             wall.moveVertical(20);
             wall.changeSize(120);
