@@ -18,7 +18,7 @@ public class Canvas
     public static Canvas getCanvas()
     {
         if(canvasSingleton == null) {
-            canvasSingleton = new Canvas("BlueJ Picture Demo", 1100, 700,
+            canvasSingleton = new Canvas("BlueJ Picture Demo", 1300, 900,
                     Color.white);
         }
         canvasSingleton.setVisible(true);
@@ -108,7 +108,7 @@ public class Canvas
 
     /**
      * Set the foreground color of the Canvas.
-     * @param  newColor   the new color for the foreground of the Canvas
+     * @param  "newColor" the new color for the foreground of the Canvas
      */
     public void setForegroundColor(String colorString)
     {
@@ -125,7 +125,7 @@ public class Canvas
             graphic.setColor(new Color(255, 230, 0));
         }
         else if(colorString.equals("green")) {
-            graphic.setColor(new Color(80, 160, 60));
+            graphic.setColor(new Color(52, 128, 38));
         }
         else if(colorString.equals("magenta")) {
             graphic.setColor(Color.magenta);
@@ -134,10 +134,19 @@ public class Canvas
             graphic.setColor(Color.white);
         }
         else if(colorString.equals("teal")) {
-            graphic.setColor(new Color(179, 252, 231, 255));
+            graphic.setColor(new Color(216, 250, 230, 255));
         }
         else if(colorString.equals("brown")) {
             graphic.setColor(new Color(150, 97, 52, 255));
+        }
+        else if(colorString.equals("white")) {
+            graphic.setColor(new Color(255, 255, 255, 255));
+        }
+        else if(colorString.equals("maroon")) {
+            graphic.setColor(new Color(115, 51, 51, 255));
+        }
+        else if(colorString.equals("gray")) {
+            graphic.setColor(new Color(203, 189, 189, 255));
         }
         else {
             graphic.setColor(Color.black);
