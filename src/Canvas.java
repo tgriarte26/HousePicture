@@ -50,7 +50,7 @@ public class Canvas
         frame.setTitle(title);
         frame.setLocation(30, 30);
         canvas.setPreferredSize(new Dimension(width, height));
-        backgroundColor = bgColor;
+        backgroundColor = Color.CYAN;
         frame.pack();
         objects = new ArrayList<Object>();
         shapes = new HashMap<Object, ShapeDescription>();
@@ -147,6 +147,12 @@ public class Canvas
         }
         else if(colorString.equals("gray")) {
             graphic.setColor(new Color(203, 189, 189, 255));
+        }
+        else if(colorString.equals("peach")) {
+            graphic.setColor(new Color(225, 167, 109, 255));
+        }
+        else if(colorString.equals("teal2")) {
+            graphic.setColor(new Color(64, 204, 163, 255));
         }
         else {
             graphic.setColor(Color.black);
