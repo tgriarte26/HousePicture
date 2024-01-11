@@ -19,11 +19,16 @@ public class Picture
     private Square chimney5;
     private Square window;
     private Square window2;
+    private Square window3;
     private Square tealwindow;
     private Square tealwindow2;
+    private Square tealwindow3;
     private Square floor;
     private Square grass;
     private Square door;
+    private Square door2;
+    private Square plantwall;
+    private Square plantwall2;
     private Triangle roof;
     private Triangle roof2;
     private Triangle tealroof;
@@ -32,6 +37,7 @@ public class Picture
     private Triangle brownroof3;
     private Triangle whiteroof;
     private Circle sun;
+    private Circle handle;
     private boolean drawn;
 
     /**
@@ -59,10 +65,15 @@ public class Picture
         floor = new Square();
         grass = new Square();
         door = new Square();
+        door2 = new Square();
         window = new Square();
         window2 = new Square();
+        window3 = new Square();
         tealwindow = new Square();
         tealwindow2 = new Square();
+        tealwindow3 = new Square();
+        plantwall = new Square();
+        plantwall2 = new Square();
         roof = new Triangle();
         roof2 = new Triangle();
         tealroof = new Triangle();
@@ -71,6 +82,7 @@ public class Picture
         brownroof3 = new Triangle();
         whiteroof = new Triangle();
         sun = new Circle();
+        handle = new Circle();
         drawn = false;
     }
 
@@ -86,7 +98,7 @@ public class Picture
     {
         if(!drawn) {
             floor.changeColor("gray");
-            floor.moveHorizontal(-80);
+            floor.moveHorizontal(-110);
             floor.moveVertical(300);
             floor.changeSize(530);
             floor.makeVisible();
@@ -97,8 +109,8 @@ public class Picture
             grass.makeVisible();
             chimney.changeColor("maroon");
             chimney.moveHorizontal(-110);
-            chimney.moveVertical(7);
-            chimney.changeSize(93);
+            chimney.moveVertical(11);
+            chimney.changeSize(89);
             chimney.makeVisible();
             chimney2.changeColor("maroon");
             chimney2.moveHorizontal(-110);
@@ -156,10 +168,16 @@ public class Picture
             tealwall5.changeSize(190);
             tealwall5.makeVisible();
             door.changeColor("white");
-            door.moveHorizontal(180);
+            door.moveHorizontal(170);
             door.moveVertical(280);
-            door.changeSize(60);
+            door.changeSize(80);
             door.makeVisible();
+            door2.changeColor("white");
+            door2.moveHorizontal(170);
+            door2.moveVertical(350);
+            door2.changeSize(80);
+            door2.makeVisible();
+
 
             window.changeColor("white");
             window.moveHorizontal(-10);
@@ -171,6 +189,11 @@ public class Picture
             window2.moveVertical(280);
             window2.changeSize(70);
             window2.makeVisible();
+            window3.changeColor("white");
+            window3.moveHorizontal(290);
+            window3.moveVertical(280);
+            window3.changeSize(70);
+            window3.makeVisible();
             tealwindow.changeColor("teal2");
             tealwindow.moveHorizontal(65);
             tealwindow.moveVertical(290);
@@ -181,6 +204,21 @@ public class Picture
             tealwindow2.moveVertical(290);
             tealwindow2.changeSize(50);
             tealwindow2.makeVisible();
+            tealwindow3.changeColor("teal2");
+            tealwindow3.moveHorizontal(300);
+            tealwindow3.moveVertical(290);
+            tealwindow3.changeSize(50);
+            tealwindow3.makeVisible();
+            plantwall.changeColor("peach");
+            plantwall.moveHorizontal(385);
+            plantwall.moveVertical(490);
+            plantwall.changeSize(50);
+            plantwall.makeVisible();
+            plantwall2.changeColor("peach");
+            plantwall2.moveHorizontal(435);
+            plantwall2.moveVertical(490);
+            plantwall2.changeSize(50);
+            plantwall2.makeVisible();
 
             roof.changeColor("brown");
             roof.changeSize(60, 60);
@@ -234,18 +272,23 @@ public class Picture
             squareroof7.makeVisible();
             whiteroof.changeColor("white");
             whiteroof.changeSize(100, 300);
-            whiteroof.moveHorizontal(710);
+            whiteroof.moveHorizontal(685);
             whiteroof.moveVertical(100);
             whiteroof.makeVisible();
             tealroof.changeColor("teal");
             tealroof.changeSize(75, 240);
-            tealroof.moveHorizontal(710);
+            tealroof.moveHorizontal(685);
             tealroof.moveVertical(115);
             tealroof.makeVisible();
 
 
 
 
+            handle.changeColor("gray");
+            handle.moveHorizontal(300);
+            handle.moveVertical(390);
+            handle.changeSize(20);
+            handle.makeVisible();
             //sun.changeColor("yellow");
             //sun.moveHorizontal(100);
             //sun.moveVertical(-40);
