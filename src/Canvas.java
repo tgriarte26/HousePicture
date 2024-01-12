@@ -154,6 +154,18 @@ public class Canvas
         else if(colorString.equals("teal2")) {
             graphic.setColor(new Color(64, 204, 163, 255));
         }
+        else if(colorString.equals("green2")) {
+            graphic.setColor(new Color(29, 173, 69, 255));
+        }
+        else if(colorString.equals("darkgray")) {
+            graphic.setColor(new Color(93, 93, 96, 255));
+        }
+        else if(colorString.equals("teal3")) {
+            graphic.setColor(new Color(120, 203, 166, 255));
+        }
+        else if(colorString.equals("darkbrown")) {
+            graphic.setColor(new Color(100, 67, 37, 255));
+        }
         else {
             graphic.setColor(Color.black);
         }
